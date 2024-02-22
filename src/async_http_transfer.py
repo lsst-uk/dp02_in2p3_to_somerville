@@ -7,7 +7,7 @@ import aiofiles
 import cProfile
 import pandas as pd
 import traceback
-
+from contextlib import redirect_stdout
 
 async def fetch(url, session):
     async with session.get(url) as response:
@@ -39,7 +39,8 @@ async def download_and_write(url, butler_directory, session):
 async def main(urls, butler_directory, max_connections=4):
 
     connector = aiohttp.TCPConnector(limit=max_connections)
-    async with aiohttp.ClientSession(connector=connector) as session:
+    timeout = aiohttp.ClientTimeout(total=86400)
+    async with aiohttp.ClientSession(connector=connector, timeout=timeout) as session:
         tasks = [download_and_write(url, butler_directory,session) for url in urls]
         await asyncio.gather(*tasks)
 
@@ -84,4 +85,9 @@ if __name__ == "__main__":
         print("the file "+str(url_file)+" does not exist.")
     except Exception as e:
         print("An exception occurred:", str(e))
-        traceback.print_exc()
+        with open('error.log', 'w') as f:
+            with redirect_stdout(f):
+                traceback.print_exc()
+        profiler.disable()
+        profiler.dump_stats(profiler_file)
+
