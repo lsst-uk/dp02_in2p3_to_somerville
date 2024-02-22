@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 import aiofiles 
 import cProfile
 import pandas as pd
+import traceback
 
 
 async def fetch(url, session):
@@ -40,18 +41,19 @@ async def main(urls, butler_directory, max_connections=4):
     connector = aiohttp.TCPConnector(limit=max_connections)
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = [download_and_write(url, butler_directory,session) for url in urls]
-    await asyncio.gather(*tasks)
+        await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
 
     len_argv = len(sys.argv)
-    if len_argv < 2:
-        print("Usage: python async_http_transfer.py file_with_urls.csv")
+    if len_argv < 3:
+        print("Usage: python async_http_transfer.py file_with_urls.csv profiler_output.prof")
         sys.exit(1)
 
     url_file = sys.argv[1]
-    max_connections = 4 if len_argv <= 2 else sys.argv[2]
-    butler_directory = '/data/butler/dp02/' if len_argv <= 3 else sys.argv[3]
+    profiler_file = sys.argv[2]
+    max_connections = 4 if len_argv <= 3 else int(sys.argv[3])
+    butler_directory = '/data/butler/dp02/' if len_argv <= 4 else sys.argv[4]
     
     url_file_path = os.path.join(
         os.path.dirname(
@@ -64,7 +66,7 @@ if __name__ == "__main__":
     
     try:
         urls = pd.read_csv(url_file, names=['urls'])
-        urls = urls.head()
+        #urls = urls.head()
         url_list = urls.urls.tolist()
         
         profiler = cProfile.Profile()
@@ -74,7 +76,6 @@ if __name__ == "__main__":
         loop.run_until_complete(main(url_list, butler_directory, max_connections))
         
         profiler.disable()
-        profiler_file = "profiler_stats.prof"
         profiler.dump_stats(profiler_file)
 
         # print(f"Profiler statistics saved to {profiler_file}")
@@ -83,3 +84,4 @@ if __name__ == "__main__":
         print("the file "+str(url_file)+" does not exist.")
     except Exception as e:
         print("An exception occurred:", str(e))
+        traceback.print_exc()
