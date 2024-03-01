@@ -32,12 +32,12 @@ if __name__ == "__main__":
 
     repo = sys.argv[1]
     ds_type = sys.argv[2]
-    profiler_file = f'ingest_{ds_type}_output.prof' if len == 3 else sys.argv[3]
+    profiler_file = f'ingest_{ds_type}_output.prof' if len_argv == 3 else sys.argv[3]
 
     directory = os.path.join(
         os.path.dirname(
             os.path.abspath(__file__)),
-        '/ecsv/',
+        '../ecsv/',
         ds_type)
 
     try:
