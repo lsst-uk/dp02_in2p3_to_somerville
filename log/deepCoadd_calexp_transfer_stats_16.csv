@@ -1,0 +1,559 @@
+fname,ncalls,tottime,percall_tottime,cumtime,percall_cumtime,file_name,line_number
+run_until_complete,1,3e-05,3e-05,6526.00803,6526.00803,base_events.py,617
+run_forever,1,11.04105,11.04105,6526.00794,6526.00794,base_events.py,593
+_run_once,13620978,143.66989,1e-05,6514.96686,0.00048,base_events.py,1845
+_run,42387469,49.40354,0.0,4855.56001,0.00011,events.py,78
+<method 'run' of '_contextvars.Context' objects>,42387469,104.59152,0.0,4806.15647,0.00011,~,0
+_read_ready,19367117,17.74309,0.0,3591.1455,0.00019,selector_events.py,951
+_read_ready__get_buffer,19367117,62.2625,0.0,3573.40242,0.00018,selector_events.py,954
+buffer_updated,19367117,61.52892,0.0,2917.51725,0.00015,sslproto.py,432
+_do_read,25414289,70.55235,0.0,2736.32404,0.00011,sslproto.py,720
+_do_read__copied,21542096,175.63982,1e-05,2543.6276,0.00012,sslproto.py,771
+read,23368,0.0824,0.0,0.10865,0.0,streams.py,617
+<method 'read' of '_ssl._SSLSocket' objects>,145877460,1518.56725,1e-05,1518.56725,1e-05,~,0
+select,13620978,73.42633,1e-05,1441.38462,0.00011,selectors.py,451
+<method 'poll' of 'select.epoll' objects>,13620978,1345.90008,0.0001,1345.90008,0.0001,~,0
+download_and_write,16810235,9.70545,0.0,1050.86828,6e-05,async_http_transfer.py,23
+fetch,16775183,8.46006,0.0,1034.88662,6e-05,async_http_transfer.py,12
+<method 'join' of 'bytes' objects>,30852599,839.72411,3e-05,839.72411,3e-05,~,0
+<method 'recv_into' of '_socket.socket' objects>,19367117,567.27752,3e-05,567.27752,3e-05,~,0
+data_received,16748651,273.38329,2e-05,531.10824,3e-05,client_proto.py,201
+readany,33497302,37.46323,0.0,343.68878,1e-05,streams.py,387
+feed_data,11684,0.04231,0.0,0.14937,1e-05,streams.py,600
+<method 'write' of '_ssl.MemoryBIO' objects>,19367117,164.59953,1e-05,164.59953,1e-05,~,0
+_read_nowait,16760335,37.60973,0.0,158.11412,1e-05,streams.py,490
+_wait,33473934,48.84946,0.0,148.11142,0.0,streams.py,288
+set_result,16748651,18.50742,0.0,137.45732,1e-05,helpers.py,808
+call_soon,22950130,29.64532,0.0,122.92443,1e-05,base_events.py,751
+<method 'set_result' of '_asyncio.Future' objects>,16799207,22.5775,0.0,115.84053,1e-05,~,0
+_read_nowait_chunk,16748651,44.74421,0.0,110.60564,1e-05,streams.py,463
+_process_outgoing,21557043,35.84324,0.0,88.88789,0.0,sslproto.py,711
+_call_soon,22950130,38.81022,0.0,86.21712,0.0,base_events.py,780
+resume_reading,6047255,4.93757,0.0,42.16046,1e-05,sslproto.py,134
+resume,6047255,7.2769,0.0,53.69762,1e-05,sslproto.py,863
+__enter__,4,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,1026
+_process_events,13620978,31.88816,0.0,45.16169,0.0,selector_events.py,733
+__init__,1,0.0,0.0,0.0,0.0,selectors.py,63
+_resume_reading,6047255,8.00034,0.0,37.22289,1e-05,sslproto.py,859
+_control_app_writing,21557043,24.56338,0.0,37.20564,0.0,sslproto.py,816
+_control_ssl_reading,25414289,24.31284,0.0,34.0707,0.0,sslproto.py,874
+<method 'append' of 'list' objects>,163427458,30.75462,0.0,30.75462,0.0,~,0
+<built-in method builtins.len>,168363987/168340619,29.91387,0.0,29.93196,0.0,~,0
+pause_reading,6047255,5.50647,0.0,8.00048,0.0,sslproto.py,126
+current_task,16773079,11.5893,0.0,14.93894,0.0,tasks.py,35
+__exit__,4,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,1030
+__aenter__,1,0.0,0.0,0.0,0.0,client.py,1158
+_request,38216,0.71361,2e-05,24.25042,0.00063,client.py,383
+create_future,16799206,20.58854,0.0,23.96297,0.0,base_events.py,425
+get_buffer,19367117,18.39021,0.0,22.24947,0.0,sslproto.py,423
+send,11684,0.49605,4e-05,15.12604,0.00129,client_reqrep.py,651
+time,17761607,10.28776,0.0,15.05381,0.0,base_events.py,700
+_reschedule_timeout,22807590,14.1667,0.0,14.1667,0.0,client_proto.py,180
+write_headers,11684,0.21529,2e-05,13.57307,0.00116,http_writer.py,121
+_write,2103382,0.79424,0.0,1.04556,0.0,_quoting_c.pyx,260
+_add_callback,19403363,10.97128,0.0,13.27353,0.0,base_events.py,1830
+write,11684,0.05551,0.0,0.06972,1e-05,http_writer.py,78
+_write_appdata,11684,0.11176,1e-05,13.15557,0.00113,sslproto.py,671
+_do_write,11684,0.11894,1e-05,13.03496,0.00112,sslproto.py,695
+_get_write_buffer_size,21557043,12.64227,0.0,12.64227,0.0,sslproto.py,845
+<method 'write' of '_ssl._SSLSocket' objects>,11684,12.15218,0.00104,12.15218,0.00104,~,0
+<method 'read' of '_ssl.MemoryBIO' objects>,21558087,12.14622,0.0,12.14622,0.0,~,0
+_get_read_buffer_size,25414289,9.75785,0.0,9.75785,0.0,sslproto.py,889
+<method 'append' of 'collections.deque' objects>,59137620,8.48614,0.0,8.48614,0.0,~,0
+get_debug,39843618,8.18873,0.0,8.18873,0.0,base_events.py,1940
+<built-in method builtins.max>,17724380,8.14797,0.0,8.14797,0.0,~,0
+_key_from_fd,19403363,8.10246,0.0,8.10246,0.0,selectors.py,275
+<method 'popleft' of 'collections.deque' objects>,59161582,7.74098,0.0,7.74098,0.0,~,0
+_check_closed,23026602,7.09342,0.0,7.09342,0.0,base_events.py,517
+<method 'pop' of 'list' objects>,16771418,5.48371,0.0,5.48371,0.0,~,0
+write_fits_file,46736,0.24888,1e-05,5.03122,0.00011,async_http_transfer.py,16
+<built-in method time.monotonic>,17763302,4.76655,0.0,4.76655,0.0,~,0
+run_in_executor,35695,0.29792,1e-05,4.27885,0.00012,base_events.py,815
+assert_timeout,16760335,3.87066,0.0,3.87066,0.0,helpers.py,706
+<method 'done' of '_asyncio.Future' objects>,16808770,3.59005,0.0,3.59005,0.0,~,0
+<method 'get' of 'dict' objects>,16832564,3.37693,0.0,3.40671,0.0,~,0
+submit,35695,0.79591,2e-05,2.70695,8e-05,thread.py,161
+_pause_reading,6047255,2.49401,0.0,2.49401,0.0,sslproto.py,856
+_open,23368,0.16312,1e-05,2.44495,0.0001,__init__.py,66
+connect,26532,0.29373,1e-05,2.41677,9e-05,connector.py,494
+_build_url,11684,0.01348,0.0,2.22908,0.00019,client.py,375
+__new__,1,0.0,0.0,0.00158,0.00158,ssl.py,492
+_do_handshake,2203,0.01166,1e-05,2.12768,0.00097,sslproto.py,555
+feed_eof,11684,0.06544,1e-05,2.02779,0.00017,streams.py,172
+_response_eof,11684,0.17207,1e-05,1.94667,0.00017,client_reqrep.py,1006
+<built-in method _contextvars.copy_context>,6068872,1.88066,0.0,1.88066,0.0,~,0
+_read_from_self,33076,0.20713,1e-05,1.76639,5e-05,selector_events.py,116
+do_handshake,2203,0.0057,0.0,1.75138,0.00079,ssl.py,977
+<method 'do_handshake' of '_ssl._SSLSocket' objects>,2203,1.74569,0.00079,1.74569,0.00079,~,0
+_drop_timeout,6063147,1.73346,0.0,1.73346,0.0,client_proto.py,175
+_release_connection,46736,0.08227,0.0,1.72761,4e-05,client_reqrep.py,1068
+<built-in method math.ceil>,4115482,1.72078,0.0,1.72078,0.0,~,0
+<built-in method builtins.min>,4126769,1.63879,0.0,1.63879,0.0,~,0
+release,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,125
+<method 'recv' of '_socket.socket' objects>,66155,1.52093,2e-05,1.52093,2e-05,~,0
+_set_state,5284,0.00994,0.0,0.00994,0.0,sslproto.py,490
+__call__,23368,0.00286,0.0,0.00286,0.0,_quoting_c.pyx,283
+_do_quote,35052,0.3441,1e-05,1.38966,4e-05,_quoting_c.pyx,220
+_copy_future_state,35695,0.23683,1e-05,1.32212,4e-05,futures.py,345
+update_cookies,11684,0.00297,0.0,0.00297,0.0,client_reqrep.py,461
+wrap_future,35695,0.23167,1e-05,1.23296,3e-05,futures.py,409
+__aexit__,2,1e-05,0.0,0.02275,0.01138,client.py,1161
+_release,11684,0.09836,1e-05,1.07489,9e-05,connector.py,649
+method,23368,0.09322,0.0,0.9704,4e-05,utils.py,41
+_release_acquired,11684,0.0723,1e-05,0.86111,7e-05,connector.py,634
+_create_connection,4240,0.01573,0.0,0.85077,0.0002,connector.py,901
+_create_direct_connection,4240,0.04109,1e-05,0.82899,0.0002,connector.py,1146
+_get,11684,0.13064,1e-05,0.79292,7e-05,connector.py,577
+is_ip_address,12744,0.0625,0.0,0.74442,6e-05,helpers.py,544
+_is_ip_address,37172,0.08732,0.0,0.72722,2e-05,helpers.py,527
+_chain_future,35695,0.28915,1e-05,0.71954,2e-05,futures.py,365
+urlsplit,23368,0.50431,2e-05,0.69248,3e-05,parse.py,452
+start,4,3e-05,1e-05,0.00268,0.00067,threading.py,945
+_wrap_create_connection,3180,0.02157,1e-05,0.64101,0.0002,connector.py,980
+<method 'match' of 're.Pattern' objects>,37172,0.63465,2e-05,0.63465,2e-05,~,0
+close,1,2e-05,2e-05,0.00277,0.00277,connector.py,411
+_start_shutdown,1060,0.01114,1e-05,0.5968,0.00056,sslproto.py,605
+create_connection,3180,0.01655,1e-05,0.59066,0.00019,base_events.py,987
+create_task,24442,0.28276,1e-05,0.58316,2e-05,base_events.py,429
+urlparse,11684,0.0473,0.0,0.56904,5e-05,parse.py,374
+_do_flush,1060,0.0037,0.0,0.5553,0.00052,sslproto.py,636
+makedirs,11684,0.03733,0.0,0.54822,5e-05,<frozen os>,200
+_release_waiter,11684,0.17403,1e-05,0.53367,5e-05,connector.py,608
+_resolve_host,1716,0.0229,1e-05,0.51682,0.0003,connector.py,825
+<method 'send' of '_socket.socket' objects>,14864,0.51463,3e-05,0.51463,3e-05,~,0
+_call_connection_lost,1044,0.36596,0.00035,0.42002,0.0004,selector_events.py,893
+_adjust_thread_count,35695,0.12584,0.0,0.41129,1e-05,thread.py,180
+<method 'put' of '_queue.SimpleQueue' objects>,35695,0.41,1e-05,0.41,1e-05,~,0
+write_bytes,11684,0.15393,1e-05,0.4018,3e-05,client_reqrep.py,610
+isfuture,227976,0.20624,0.0,0.40024,0.0,base_futures.py,14
+raw_host,47796,0.06561,0.0,0.39919,1e-05,_url.py,489
+hostname,59480,0.17293,0.0,0.38297,1e-05,parse.py,164
+<built-in method builtins.isinstance>,592127/568759,0.16334,0.0,0.37639,0.0,~,0
+update_headers,11684,0.06683,1e-05,0.35038,3e-05,client_reqrep.py,422
+<built-in method posix.stat>,23371,0.34842,1e-05,0.34842,1e-05,~,0
+connection_made,1060,0.00641,1e-05,0.06311,6e-05,base_protocol.py,60
+_start_handshake,1060,0.00851,1e-05,0.34407,0.00032,sslproto.py,530
+_create_connection_transport,2120,0.01337,1e-05,0.33595,0.00016,base_events.py,1124
+resolve,1286,0.01128,1e-05,0.33003,0.00026,resolver.py,30
+_do_shutdown,2120,0.01066,1e-05,0.32624,0.00015,sslproto.py,641
+_on_handshake_complete,1060,0.03052,3e-05,0.32243,0.0003,sslproto.py,565
+getaddrinfo,1286,0.00232,0.0,0.30922,0.00024,base_events.py,860
+exists,11684,0.01071,0.0,0.30886,3e-05,<frozen genericpath>,16
+_notify_release,11684,0.14977,1e-05,0.30823,3e-05,connector.py,155
+_make_ssl_transport,1060,0.00892,1e-05,0.30099,0.00028,selector_events.py,64
+done,35695,0.16175,0.0,0.30079,1e-05,_base.py,393
+acquire,1,1e-05,1e-05,1e-05,1e-05,<frozen importlib._bootstrap>,100
+_hostinfo,130644,0.20318,0.0,0.28208,0.0,parse.py,205
+__hash__,123547,0.22999,0.0,0.27735,0.0,<attrs generated hash aiohttp.client_reqrep.ConnectionKey>,1
+_drop_acquired_per_host,12744,0.09632,1e-05,0.26428,2e-05,connector.py,377
+unwrap,2120,0.00287,0.0,0.24535,0.00012,ssl.py,981
+<method 'shutdown' of '_ssl._SSLSocket' objects>,2120,0.24248,0.00011,0.24248,0.00011,~,0
+port,12744,0.00788,0.0,0.06364,0.0,client_reqrep.py,387
+_make_netloc,11684,0.02011,0.0,0.22793,2e-05,_url.py,785
+shuffle,11668,0.11085,1e-05,0.22274,2e-05,random.py,376
+_connect_sock,2120,0.01624,1e-05,0.21923,0.0001,base_events.py,943
+add_done_callback,35695,0.1288,0.0,0.20999,1e-05,_base.py,408
+_encode_host,11684,0.02389,0.0,0.20782,2e-05,_url.py,763
+set_response_params,11684,0.20719,2e-05,0.20719,2e-05,client_proto.py,139
+wrapper,11684,0.057,0.0,0.20705,2e-05,functools.py,904
+should_close,23368,0.13104,1e-05,0.20023,1e-05,client_proto.py,45
+_ensure_future,13805,0.02296,0.0,0.19914,1e-05,tasks.py,662
+<built-in method builtins.hasattr>,231165,0.1957,0.0,0.1957,0.0,~,0
+main,3,0.00039,0.00013,0.19089,0.06363,async_http_transfer.py,39
+result,35695,0.10677,0.0,0.18667,1e-05,_base.py,428
+ip_address,11684,0.05927,1e-05,0.1791,2e-05,ipaddress.py,28
+__instancecheck__,11684,0.01676,0.0,0.04567,0.0,<frozen abc>,117
+sock_connect,2120,0.01406,1e-05,0.17523,8e-05,selector_events.py,614
+__eq__,89378,0.17368,0.0,0.17368,0.0,<attrs generated eq aiohttp.client_reqrep.ConnectionKey>,1
+connection_key,11684,0.03163,0.0,0.16958,1e-05,client_reqrep.py,364
+_notify_content,11684,0.096,1e-05,0.16534,1e-05,client_reqrep.py,1086
+cancel,16332,0.06546,0.0,0.06907,0.0,events.py,64
+gather,1,0.01657,0.01657,0.16237,0.16237,tasks.py,728
+timer,11684,0.01873,0.0,0.14751,1e-05,helpers.py,664
+call_at,14212,0.04135,0.0,0.14446,1e-05,base_events.py,733
+update_auto_headers,11684,0.09309,1e-05,0.14096,1e-05,client_reqrep.py,447
+__subclasscheck__,11700/11685,0.01933,0.0,0.04758,0.0,<frozen abc>,121
+_sock_connect,1060,0.0129,1e-05,0.12882,0.00012,selector_events.py,639
+update_host,11684,0.01668,0.0,0.12834,1e-05,client_reqrep.py,396
+request_info,11684,0.04259,0.0,0.12722,1e-05,client_reqrep.py,391
+bit_at,2103382,0.12709,0.0,0.12709,0.0,_quoting_c.pyx,59
+_weakref_handle,407,0.0056,1e-05,0.12461,0.00031,helpers.py,592
+_write_char,2103382,0.12423,0.0,0.12423,0.0,_quoting_c.pyx,98
+register,2121,0.01041,0.0,0.01806,1e-05,selectors.py,234
+_cleanup,407,0.01655,4e-05,0.11743,0.00029,connector.py,332
+__get__,35052,0.0365,0.0,0.11577,0.0,_url.py,41
+_do_expiration,11684,0.03247,0.0,0.11059,1e-05,cookiejar.py,158
+_randbelow_with_getrandbits,24881,0.05591,0.0,0.10997,0.0,random.py,235
+exception,23368,0.01012,0.0,0.01012,0.0,streams.py,588
+cancelled,1060,0.00046,0.0,0.00046,0.0,events.py,75
+<method 'format' of 'str' objects>,18046,0.10478,1e-05,0.10478,1e-05,~,0
+<built-in method posix.mkdir>,11684,0.10406,1e-05,0.10406,1e-05,~,0
+is_default_port,11684,0.01949,0.0,0.1031,1e-05,_url.py,378
+_normalize_path,11684,0.02491,0.0,0.10288,1e-05,_url.py,749
+open,11684,0.07308,1e-05,0.09666,1e-05,__init__.py,37
+_wait_released,11684,0.07631,1e-05,0.09528,1e-05,client_reqrep.py,1076
+_done_callback,11684,0.08394,1e-05,0.09455,1e-05,tasks.py,764
+dispatch,11684,0.04834,0.0,0.08976,1e-05,functools.py,818
+wrap_bio,1060,0.00516,0.0,0.08576,8e-05,ssl.py,527
+write_eof,11684,0.03218,0.0,0.08469,1e-05,http_writer.py,132
+strip_auth_from_url,11684,0.01034,0.0,0.08461,1e-05,helpers.py,178
+add,643,0.00474,1e-05,0.00502,1e-05,connector.py,701
+split,23368,0.05307,0.0,0.0813,0.0,<frozen posixpath>,100
+clear,1,1e-05,1e-05,1e-05,1e-05,<frozen _collections_abc>,933
+<built-in method _asyncio.get_running_loop>,48856,0.07773,0.0,0.07773,0.0,~,0
+getpeercert,1060,0.00203,0.0,0.07753,7e-05,ssl.py,932
+_splitnetloc,23368,0.05178,0.0,0.07717,0.0,parse.py,413
+<method 'getpeercert' of '_ssl._SSLSocket' objects>,1060,0.07549,7e-05,0.07549,7e-05,~,0
+from_url,11684,0.01424,0.0,0.07427,1e-05,helpers.py,163
+<built-in method builtins.issubclass>,11684,0.02654,0.0,0.07406,1e-05,~,0
+join,23368,0.04695,0.0,0.07185,0.0,<frozen posixpath>,71
+<method '__enter__' of '_thread.RLock' objects>,178475,0.07065,0.0,0.07065,0.0,~,0
+_cleanup_writer,35052,0.05532,0.0,0.06897,0.0,client_reqrep.py,1081
+get_key,5301,0.01713,0.0,0.06547,1e-05,selectors.py,180
+RLock,35695,0.06533,0.0,0.06533,0.0,threading.py,90
+isdir,11684,0.01163,0.0,0.06407,1e-05,<frozen genericpath>,39
+_,11684,0.04343,0.0,0.06029,1e-05,__init__.py,109
+_normalize_path_segments,11684,0.04519,0.0,0.05988,1e-05,_url.py,55
+<method 'partition' of 'str' objects>,344136,0.05909,0.0,0.05909,0.0,~,0
+__lt__,88915,0.05043,0.0,0.05857,0.0,events.py,119
+set_exception,1044,0.00123,0.0,0.00123,0.0,streams.py,591
+host,11684,0.00676,0.0,0.05745,0.0,client_reqrep.py,381
+tcp_nodelay,1060,0.02008,2e-05,0.05648,5e-05,tcp_helpers.py,24
+ensure_future,1061,0.00226,0.0,0.05634,5e-05,tasks.py,654
+call_later,2120,0.00883,0.0,0.05551,3e-05,base_events.py,709
+_remove,24442,0.04264,0.0,0.05492,0.0,_weakrefset.py,39
+ceil_timeout,12744,0.01133,0.0,0.05451,0.0,helpers.py,746
+_create,1060,0.00325,0.0,0.05426,5e-05,ssl.py,866
+_add_writer,1060,0.00776,1e-05,0.05396,5e-05,selector_events.py,298
+_add_reader,1061,0.00811,1e-05,0.04806,5e-05,selector_events.py,261
+drain,11684,0.02681,0.0,0.0525,0.0,http_writer.py,162
+with_fragment,23368,0.03564,0.0,0.05226,0.0,_url.py,1028
+method_must_be_empty_body,11684,0.04211,0.0,0.05167,0.0,helpers.py,975
+is_connected,13883,0.04126,0.0,0.05074,0.0,client_proto.py,70
+_sock_write_done,1060,0.00356,0.0,0.05058,5e-05,selector_events.py,662
+<method 'getrandbits' of '_random.Random' objects>,43727,0.05033,0.0,0.05033,0.0,~,0
+_get_loop,12,1e-05,0.0,2e-05,0.0,mixins.py,12
+<method '_wrap_bio' of '_ssl._SSLContext' objects>,1060,0.05016,5e-05,0.05016,5e-05,~,0
+<built-in method builtins.hash>,123547,0.04735,0.0,0.04735,0.0,~,0
+<method 'connect' of '_socket.socket' objects>,1060,0.04661,4e-05,0.04661,4e-05,~,0
+remove_writer,1060,0.00453,0.0,0.04656,4e-05,selector_events.py,352
+_remove_writer,2120,0.0099,0.0,0.04633,2e-05,selector_events.py,314
+wait_for_close,11684,0.01426,0.0,0.04463,0.0,client_reqrep.py,1092
+family,1060,0.00312,0.0,0.01949,2e-05,trsock.py,18
+get,2,1e-05,1e-05,3e-05,2e-05,<frozen _collections_abc>,771
+timeout,12744,0.0191,0.0,0.04319,0.0,timeouts.py,129
+_call_check_cancel,35695,0.03515,0.0,0.04295,0.0,futures.py,387
+__getitem__,2,2e-05,1e-05,2e-05,1e-05,<frozen os>,674
+<built-in method _heapq.heappop>,3736,0.01448,0.0,0.0423,1e-05,~,0
+<built-in method _heapq.heappush>,14212,0.01908,0.0,0.04039,0.0,~,0
+<method 'add' of 'set' objects>,49939,0.04026,0.0,0.04026,0.0,~,0
+user,11684,0.01296,0.0,0.04012,0.0,_url.py,462
+_coerce_args,35052,0.03627,0.0,0.04006,0.0,parse.py,119
+__get_result,35695,0.03984,0.0,0.03984,0.0,_base.py,398
+_available_connections,23352,0.03525,0.0,0.03879,0.0,connector.py,461
+_userinfo,46736,0.03151,0.0,0.03842,0.0,parse.py,193
+_process_self_data,33079,0.03833,0.0,0.03833,0.0,unix_events.py,81
+<method 'rpartition' of 'str' objects>,177387,0.03798,0.0,0.03798,0.0,~,0
+_writer,11684,0.00451,0.0,0.00451,0.0,client_reqrep.py,345
+username,23368,0.01329,0.0,0.03512,0.0,parse.py,156
+password,23368,0.01084,0.0,0.02744,0.0,parse.py,160
+connection_lost,1044,0.00098,0.0,0.00098,0.0,base_protocol.py,65
+_intenum_converter,6360,0.01251,0.0,0.033,1e-05,socket.py,99
+_ip_int_from_string,11684,0.02208,0.0,0.02551,0.0,ipaddress.py,1617
+keep_alive,11684,0.02817,0.0,0.03131,0.0,client_reqrep.py,596
+<method '__exit__' of '_thread.RLock' objects>,178479,0.03124,0.0,0.03124,0.0,~,0
+<method 'add_done_callback' of '_asyncio.Future' objects>,37815,0.03043,0.0,0.03043,0.0,~,0
+protocol,70104,0.02963,0.0,0.02963,0.0,connector.py,147
+<built-in method _abc._abc_instancecheck>,11684,0.02885,0.0,0.0289,0.0,~,0
+<method 'get' of 'multidict._multidict.MultiDict' objects>,35052,0.02883,0.0,0.02883,0.0,~,0
+_get_ssl_context,1060,0.00995,1e-05,0.02864,3e-05,connector.py,938
+_set_nodelay,1060,0.00859,1e-05,0.02862,3e-05,base_events.py,191
+<built-in method _abc._abc_subclasscheck>,11700/11685,0.02825,0.0,0.02825,0.0,~,0
+_real_close,1044,0.002,0.0,0.0282,3e-05,socket.py,495
+closed,11685,0.00329,0.0,0.00329,0.0,connector.py,453
+on_eof,23368,0.02388,0.0,0.02792,0.0,streams.py,163
+_remove_reader,1060,0.00636,1e-05,0.02787,3e-05,selector_events.py,277
+<method 'copy' of 'multidict._multidict.CIMultiDict' objects>,11684,0.02715,0.0,0.02715,0.0,~,0
+_ensure_resolved,2120,0.00611,0.0,0.02705,1e-05,base_events.py,1410
+_encode_hostname,1060,0.00647,1e-05,0.02634,2e-05,ssl.py,503
+<function socket.close at 0x7facb1bd2b60>,1044,0.02621,3e-05,0.02621,3e-05,~,0
+_drain_helper,11684,0.02053,0.0,0.02569,0.0,base_protocol.py,81
+raw_user,11684,0.00693,0.0,0.02562,0.0,_url.py,449
+is_ssl,13804,0.01836,0.0,0.02548,0.0,client_reqrep.py,357
+_ensure_fd_no_transport,2120,0.01274,1e-05,0.02491,1e-05,selector_events.py,243
+<method '__exit__' of '_thread.lock' objects>,107096,0.02461,0.0,0.02461,0.0,~,0
+<built-in method builtins.getattr>,12097,0.02427,0.0,0.02427,0.0,~,0
+unregister,2120,0.00375,0.0,0.00742,0.0,selectors.py,247
+_get_sep,46736,0.0167,0.0,0.0237,0.0,<frozen posixpath>,41
+<method 'lower' of 'str' objects>,106216,0.02363,0.0,0.02363,0.0,~,0
+status_code_must_be_empty_body,11684,0.02314,0.0,0.02314,0.0,helpers.py,982
+add_callback,11684,0.0199,0.0,0.02221,0.0,connector.py,151
+__len__,23368,0.01809,0.0,0.02197,0.0,streams.py,579
+<method 'replace' of 'str' objects>,140208,0.02179,0.0,0.02179,0.0,~,0
+_check_default_executor,35695,0.02151,0.0,0.02151,0.0,base_events.py,521
+raw_path,11684,0.02127,0.0,0.02127,0.0,_url.py,536
+<method 'clear' of 'list' objects>,23369,0.02115,0.0,0.02115,0.0,~,0
+<built-in method _heapq.heapify>,7,0.01155,0.00165,0.02099,0.003,~,0
+_ipaddr_info,2120,0.01518,1e-05,0.02094,1e-05,base_events.py,99
+_sock_connect_cb,1060,0.00586,1e-05,0.02086,2e-05,selector_events.py,666
+raw_password,11684,0.00589,0.0,0.02083,0.0,_url.py,471
+<method 'remove' of 'set' objects>,25488,0.02058,0.0,0.02058,0.0,~,0
+_prepare_headers,23368,0.01989,0.0,0.01989,0.0,client.py,954
+<method 'find' of 'str' objects>,93472,0.01983,0.0,0.01983,0.0,~,0
+<built-in method __new__ of type object at 0x55f54ee5f880>,62663,0.01976,0.0,0.01976,0.0,~,0
+_fileobj_lookup,9542,0.0082,0.0,0.01877,0.0,selectors.py,215
+<method 'encode' of 'str' objects>,2122/1062,0.00981,0.0,0.0187,2e-05,~,0
+<method '__enter__' of '_thread.lock' objects>,35699,0.01862,0.0,0.01862,0.0,~,0
+<method 'cancelled' of '_asyncio.Future' objects>,73510,0.01813,0.0,0.01813,0.0,~,0
+update_expect_continue,11684,0.0124,0.0,0.01782,0.0,client_reqrep.py,575
+_on_shutdown_complete,1060,0.00373,0.0,0.01781,2e-05,sslproto.py,654
+<method 'getall' of 'multidict._multidict.MultiDictProxy' objects>,11684,0.0178,0.0,0.0178,0.0,~,0
+start_timeout,11684,0.01082,0.0,0.01754,0.0,client_proto.py,192
+_timer_handle_cancelled,14212,0.01723,0.0,0.01723,0.0,base_events.py,1840
+_validate_authority_uri_abs_path,11684,0.01182,0.0,0.01688,0.0,_url.py,705
+raw_fragment,23368,0.01662,0.0,0.01662,0.0,_url.py,600
+_inner_done_callback,1060,0.00502,0.0,0.01628,2e-05,tasks.py,891
+<method 'split' of 'str' objects>,35052,0.01533,0.0,0.01533,0.0,~,0
+_checknetloc,23368,0.01236,0.0,0.01502,0.0,parse.py,421
+<method 'isascii' of 'str' objects>,129584,0.01474,0.0,0.01474,0.0,~,0
+<method 'add_done_callback' of '_asyncio.Task' objects>,36113,0.01463,0.0,0.01463,0.0,~,0
+filter_cookies,11684,0.01228,0.0,0.01454,0.0,cookiejar.py,237
+shield,1060,0.00761,1e-05,0.01388,1e-05,tasks.py,851
+__setitem__,5,1e-05,0.0,1e-05,0.0,weakref.py,427
+_wakeup_waiter,2104,0.00338,0.0,0.01317,1e-05,sslproto.py,361
+is_closing,3108,0.00195,0.0,0.00195,0.0,selector_events.py,830
+<method 'register' of 'select.epoll' objects>,2121,0.01252,1e-05,0.01252,1e-05,~,0
+<method 'upper' of 'str' objects>,23368,0.01252,0.0,0.01252,0.0,~,0
+<method 'startswith' of 'str' objects>,46738,0.01236,0.0,0.01236,0.0,~,0
+weakref_handle,408,0.00331,1e-05,0.01231,3e-05,helpers.py,600
+<method 'discard' of 'set' objects>,24442,0.01228,0.0,0.01228,0.0,~,0
+connected,23368,0.01206,0.0,0.01206,0.0,base_protocol.py,25
+<method 'isdigit' of 'str' objects>,71164,0.01195,0.0,0.01195,0.0,~,0
+_merge_ssl_params,11685,0.00761,0.0,0.01108,0.0,client_reqrep.py,156
+__del__,1,0.0,0.0,0.0,0.0,connector.py,83
+_fileobj_to_fd,9542,0.00901,0.0,0.01056,0.0,selectors.py,21
+<method 'items' of 'dict' objects>,35422,0.01036,0.0,0.01036,0.0,~,0
+scheme,25488,0.01032,0.0,0.01032,0.0,_url.py,420
+_make_ssl_context,1,1e-05,1e-05,0.00999,0.00999,connector.py,915
+create_default_context,1,3e-05,3e-05,0.00998,0.00998,ssl.py,745
+_on_headers_request_sent,11684,0.00981,0.0,0.00981,0.0,client_reqrep.py,748
+_split_scope_id,11684,0.00823,0.0,0.00975,0.0,ipaddress.py,1854
+__reset_writer,11684,0.0078,0.0,0.0078,0.0,client_reqrep.py,821
+<built-in method builtins.callable>,11684,0.00943,0.0,0.00943,0.0,~,0
+__or__,643,0.0059,1e-05,0.00939,1e-05,enum.py,1505
+connection,23368,0.00938,0.0,0.00938,0.0,client_reqrep.py,910
+_on_chunk_request_sent,11684,0.00932,0.0,0.00932,0.0,client_reqrep.py,744
+<built-in method builtins.sorted>,11684,0.0093,0.0,0.0093,0.0,~,0
+encode,2,1e-05,0.0,1e-05,0.0,<frozen os>,756
+update_version,11684,0.00666,0.0,0.00895,0.0,client_reqrep.py,407
+<method 'keys' of 'dict' objects>,11668,0.00894,0.0,0.00894,0.0,~,0
+<method 'unregister' of 'select.epoll' objects>,2120,0.00891,0.0,0.00891,0.0,~,0
+reschedule,12744,0.00878,0.0,0.00878,0.0,timeouts.py,50
+raw_query_string,11684,0.00874,0.0,0.00874,0.0,_url.py,568
+type,2120,0.00332,0.0,0.00851,0.0,socket.py,521
+load_default_certs,1,1e-05,1e-05,0.00833,0.00833,ssl.py,591
+<method 'set_default_verify_paths' of '_ssl._SSLContext' objects>,1,0.00832,0.00832,0.00832,0.00832,~,0
+<method 'setsockopt' of '_socket.socket' objects>,2120,0.00825,0.0,0.00825,0.0,~,0
+<method 'endswith' of 'str' objects>,24429,0.00806,0.0,0.00806,0.0,~,0
+setsockopt,1060,0.00282,0.0,0.00791,1e-05,trsock.py,73
+is_eof,1044,0.00049,0.0,0.00049,0.0,streams.py,582
+<built-in method _abc.get_cache_token>,11684,0.00753,0.0,0.00753,0.0,~,0
+get_extra_info,1060,0.00171,0.0,0.0024,0.0,transports.py,19
+<method 'get_loop' of '_asyncio.Future' objects>,36757,0.00718,0.0,0.00718,0.0,~,0
+url,11684,0.00712,0.0,0.00712,0.0,client_reqrep.py,836
+<built-in method time.time>,11685,0.00705,0.0,0.00705,0.0,~,0
+headers,11684,0.00703,0.0,0.00703,0.0,client_reqrep.py,854
+transport,11684,0.00669,0.0,0.00669,0.0,http_writer.py,53
+<method 'getsockname' of '_socket.socket' objects>,1060,0.00694,1e-05,0.00694,1e-05,~,0
+next_addrs,1060,0.00627,1e-05,0.00693,1e-05,connector.py,717
+<method 'rstrip' of 'str' objects>,36126,0.00691,0.0,0.00691,0.0,~,0
+<method 'search' of 're.Pattern' objects>,11684,0.00669,0.0,0.00669,0.0,~,0
+<method 'join' of 'str' objects>,11693,0.00664,0.0,0.00664,0.0,~,0
+_call_eof_received,1060,0.00463,0.0,0.00614,1e-05,sslproto.py,801
+set_protocol,1060,0.00074,0.0,0.00074,0.0,selector_events.py,823
+iscoroutine,12745,0.00561,0.0,0.00562,0.0,coroutines.py,34
+<built-in method posix.fspath>,46739,0.00552,0.0,0.00552,0.0,~,0
+<method 'rfind' of 'str' objects>,23370,0.00545,0.0,0.00545,0.0,~,0
+__bool__,11684,0.00545,0.0,0.00545,0.0,connector.py,130
+_get_extra_info,1060,0.00286,0.0,0.00526,0.0,sslproto.py,482
+<listcomp>,1,0.0,0.0,0.0,0.0,enum.py,1451
+_get_app_transport,2120,0.00395,0.0,0.00513,0.0,sslproto.py,371
+<method 'lstrip' of 'str' objects>,23368,0.00493,0.0,0.00493,0.0,~,0
+_loop,11684,0.00491,0.0,0.00491,0.0,base.py,13
+<lambda>,2121,0.00296,0.0,0.0049,0.0,<string>,1
+update_proxy,11684,0.00477,0.0,0.00477,0.0,client_reqrep.py,584
+_noop,35052,0.00469,0.0,0.00469,0.0,parse.py,108
+<method 'strip' of 'str' objects>,23368,0.00459,0.0,0.00459,0.0,~,0
+_set_read_buffer_limits,1060,0.00304,0.0,0.00451,0.0,sslproto.py,883
+<method 'setblocking' of '_socket.socket' objects>,2122,0.00442,0.0,0.00442,0.0,~,0
+<method 'isalpha' of 'str' objects>,23368,0.00432,0.0,0.00432,0.0,~,0
+update_auth,11684,0.00423,0.0,0.00423,0.0,client_reqrep.py,525
+<method 'getsockopt' of '_socket.socket' objects>,1060,0.00423,0.0,0.00423,0.0,~,0
+_init_writer,35052,0.00409,0.0,0.00409,0.0,_quoting_c.pyx,86
+<method 'bit_length' of 'int' objects>,24881,0.00373,0.0,0.00373,0.0,~,0
+<method 'exception' of '_asyncio.Task' objects>,24429,0.00359,0.0,0.00359,0.0,~,0
+<method 'cancelled' of '_asyncio.Task' objects>,24429,0.00345,0.0,0.00345,0.0,~,0
+ssl,13804,0.00343,0.0,0.00343,0.0,client_reqrep.py,360
+cipher,1060,0.00143,0.0,0.00342,0.0,ssl.py,957
+set,643,0.00129,0.0,0.00134,0.0,locks.py,182
+<genexpr>,4,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,134
+cast,25489,0.00325,0.0,0.00325,0.0,typing.py,2268
+<method 'add' of 'multidict._multidict.MultiDict' objects>,23368,0.00324,0.0,0.00324,0.0,~,0
+expired,1044,0.00284,0.0,0.00317,0.0,connector.py,724
+_release_writer,35052,0.00315,0.0,0.00315,0.0,_quoting_c.pyx,93
+<built-in method _socket.inet_pton>,2120,0.00306,0.0,0.00306,0.0,~,0
+upgraded,11684,0.00305,0.0,0.00305,0.0,client_proto.py,41
+_set_write_buffer_limits,1060,0.00152,0.0,0.00152,0.0,transports.py,314
+_get_fingerprint,1060,0.0024,0.0,0.00294,0.0,connector.py,971
+<method 'extend' of 'multidict._multidict.MultiDict' objects>,11684,0.00285,0.0,0.00285,0.0,~,0
+__contains__,1060,0.00281,0.0,0.00281,0.0,connector.py,698
+_close,1,5e-05,5e-05,0.00274,0.00274,connector.py,416
+get_map,5301,0.00261,0.0,0.00261,0.0,selectors.py,272
+_check_ssl_socket,1060,0.00208,0.0,0.00244,0.0,base_events.py,201
+wait,25,3e-05,0.0,6e-05,0.0,locks.py,200
+<method 'acquire' of '_thread.lock' objects>,32,0.00236,7e-05,0.00236,7e-05,~,0
+<method 'update' of 'dict' objects>,1060,0.00235,0.0,0.00235,0.0,~,0
+_set_app_protocol,1060,0.0018,0.0,0.00234,0.0,sslproto.py,350
+<method 'cancelling' of '_asyncio.Task' objects>,12744,0.0023,0.0,0.0023,0.0,~,0
+add_flowcontrol_defaults,2120,0.00224,0.0,0.00224,0.0,sslproto.py,57
+<built-in method _stat.S_ISDIR>,11684,0.00221,0.0,0.00221,0.0,~,0
+trust_env,11684,0.00219,0.0,0.00219,0.0,client.py,1124
+update_content_encoding,11684,0.00214,0.0,0.00214,0.0,client_reqrep.py,486
+<method 'getpeername' of '_socket.socket' objects>,1060,0.00211,0.0,0.00211,0.0,~,0
+update_body_from_data,11684,0.0021,0.0,0.0021,0.0,client_reqrep.py,541
+<method 'cipher' of '_ssl._SSLSocket' objects>,1060,0.00199,0.0,0.00199,0.0,~,0
+compression,1060,0.00152,0.0,0.00188,0.0,ssl.py,968
+is_reading,1060,0.00142,0.0,0.00183,0.0,selector_events.py,833
+<method 'pop' of 'dict' objects>,2764,0.00165,0.0,0.00165,0.0,~,0
+eof_received,1060,0.00099,0.0,0.00151,0.0,client_proto.py,107
+_outer_done_callback,1060,0.00128,0.0,0.0015,0.0,tasks.py,908
+<method 'result' of '_asyncio.Task' objects>,12745,0.00117,0.0,0.00117,0.0,~,0
+<method 'decode' of 'bytes' objects>,1060,0.00098,0.0,0.00098,0.0,~,0
+is_closed,3181,0.00093,0.0,0.00093,0.0,base_events.py,686
+<method 'split' of 'bytes' objects>,1060,0.00091,0.0,0.00091,0.0,~,0
+__getattr__,1,2e-05,2e-05,0.00076,0.00076,__init__.py,40
+_find_and_load,1,2e-05,2e-05,0.00074,0.00074,<frozen importlib._bootstrap>,1165
+<built-in method builtins.next>,1060,0.00067,0.0,0.00067,0.0,~,0
+_find_and_load_unlocked,1,2e-05,2e-05,0.00066,0.00066,<frozen importlib._bootstrap>,1120
+<method 'clear' of 'dict' objects>,2,0.00064,0.00032,0.00064,0.00032,~,0
+<method 'done' of '_asyncio.Task' objects>,2121,0.0006,0.0,0.0006,0.0,~,0
+<method 'fileno' of '_socket.socket' objects>,2121,0.00052,0.0,0.00052,0.0,~,0
+_load_unlocked,1,1e-05,1e-05,0.00048,0.00048,<frozen importlib._bootstrap>,666
+<built-in method _asyncio.get_event_loop>,2,1e-05,1e-05,0.00041,0.0002,~,0
+exec_module,1,1e-05,1e-05,0.0004,0.0004,<frozen importlib._bootstrap_external>,934
+<method 'compression' of '_ssl._SSLSocket' objects>,1060,0.00035,0.0,0.00035,0.0,~,0
+get_event_loop,1,1e-05,1e-05,0.00035,0.00035,events.py,666
+<method 'clear' of 'collections.deque' objects>,1044,0.00034,0.0,0.00034,0.0,~,0
+new_event_loop,1,1e-05,1e-05,0.00032,0.00032,events.py,689
+get_code,1,2e-05,2e-05,0.00026,0.00026,<frozen importlib._bootstrap_external>,1007
+<built-in method _thread.start_new_thread>,4,0.00024,6e-05,0.00024,6e-05,~,0
+_find_spec,1,3e-05,3e-05,0.00016,0.00016,<frozen importlib._bootstrap>,1054
+_make_self_pipe,1,3e-05,3e-05,0.00015,0.00015,selector_events.py,105
+_call_with_frames_removed,2,0.0,0.0,0.00014,7e-05,<frozen importlib._bootstrap>,233
+<built-in method builtins.exec>,1,0.0,0.0,0.00013,0.00013,~,0
+<module>,1,3e-05,3e-05,0.00013,0.00013,thread.py,1
+_compile_bytecode,1,1e-05,1e-05,0.00012,0.00012,<frozen importlib._bootstrap_external>,727
+find_spec,1,0.0,0.0,0.0,0.0,__init__.py,89
+_get_spec,1,1e-05,1e-05,2e-05,2e-05,<frozen importlib._bootstrap_external>,1599
+<built-in method marshal.loads>,1,0.00011,0.00011,0.00011,0.00011,~,0
+<built-in method builtins.__build_class__>,3,6e-05,2e-05,7e-05,2e-05,~,0
+get_data,1,1e-05,1e-05,7e-05,7e-05,<frozen importlib._bootstrap_external>,1127
+module_from_spec,1,1e-05,1e-05,6e-05,6e-05,<frozen importlib._bootstrap>,566
+_init_module_attrs,1,1e-05,1e-05,5e-05,5e-05,<frozen importlib._bootstrap>,493
+get_event_loop_policy,1,0.0,0.0,5e-05,5e-05,events.py,758
+_init_event_loop_policy,1,2e-05,2e-05,5e-05,5e-05,events.py,750
+_missing_,1,3e-05,3e-05,4e-05,4e-05,enum.py,1375
+socketpair,1,2e-05,2e-05,4e-05,4e-05,socket.py,595
+cache_from_source,2,1e-05,1e-05,4e-05,2e-05,<frozen importlib._bootstrap_external>,437
+_path_stat,3,0.0,0.0,4e-05,1e-05,<frozen importlib._bootstrap_external>,140
+<built-in method io.open_code>,1,4e-05,4e-05,4e-05,4e-05,~,0
+cached,2,0.0,0.0,3e-05,2e-05,<frozen importlib._bootstrap>,392
+_get_cached,1,1e-05,1e-05,3e-05,3e-05,<frozen importlib._bootstrap_external>,567
+debug,1,1e-05,1e-05,3e-05,3e-05,__init__.py,1467
+_get_module_lock,1,2e-05,2e-05,3e-05,3e-05,<frozen importlib._bootstrap>,179
+_path_isfile,1,0.0,0.0,3e-05,3e-05,<frozen importlib._bootstrap_external>,159
+<built-in method posix.cpu_count>,1,3e-05,3e-05,3e-05,3e-05,~,0
+_path_join,6,2e-05,0.0,3e-05,0.0,<frozen importlib._bootstrap_external>,126
+_is_debug_mode,1,1e-05,1e-05,2e-05,2e-05,coroutines.py,11
+_path_is_mode_type,1,0.0,0.0,2e-05,2e-05,<frozen importlib._bootstrap_external>,150
+isEnabledFor,1,1e-05,1e-05,2e-05,2e-05,__init__.py,1734
+verify_mode,1,1e-05,1e-05,1e-05,1e-05,ssl.py,740
+<built-in method _socket.socketpair>,1,2e-05,2e-05,2e-05,2e-05,~,0
+__await__,2,0.0,0.0,0.0,0.0,helpers.py,113
+<method 'read' of '_io.BufferedReader' objects>,1,1e-05,1e-05,1e-05,1e-05,~,0
+_iter_member_by_value_,3,1e-05,0.0,1e-05,0.0,enum.py,1355
+_run_until_complete_cb,1,1e-05,1e-05,1e-05,1e-05,base_events.py,180
+current_thread,5,1e-05,0.0,1e-05,0.0,threading.py,1453
+spec_from_file_location,1,1e-05,1e-05,1e-05,1e-05,<frozen importlib._bootstrap_external>,778
+_path_split,2,0.0,0.0,1e-05,1e-05,<frozen importlib._bootstrap_external>,132
+_is_owned,8,1e-05,0.0,1e-05,0.0,threading.py,286
+<built-in method _thread.allocate_lock>,17,1e-05,0.0,1e-05,0.0,~,0
+_classify_pyc,1,0.0,0.0,1e-05,1e-05,<frozen importlib._bootstrap_external>,642
+_WorkItem,1,1e-05,1e-05,1e-05,1e-05,thread.py,46
+parent,3,1e-05,0.0,1e-05,0.0,<frozen importlib._bootstrap>,405
+_handle_fromlist,2,1e-05,0.0,1e-05,0.0,<frozen importlib._bootstrap>,1207
+<method '__exit__' of '_io._IOBase' objects>,1,1e-05,1e-05,1e-05,1e-05,~,0
+ThreadPoolExecutor,1,1e-05,1e-05,1e-05,1e-05,thread.py,118
+set_event_loop,1,0.0,0.0,0.0,0.0,events.py,682
+_make_invoke_excepthook,4,1e-05,0.0,1e-05,0.0,threading.py,1324
+_acquire_restore,8,1e-05,0.0,1e-05,0.0,threading.py,283
+_unpack_uint32,3,1e-05,0.0,1e-05,0.0,<frozen importlib._bootstrap_external>,84
+popitem,1,1e-05,1e-05,1e-05,1e-05,weakref.py,495
+_release_save,8,1e-05,0.0,1e-05,0.0,threading.py,280
+<built-in method _asyncio._set_running_loop>,2,1e-05,0.0,1e-05,0.0,~,0
+update,1,0.0,0.0,1e-05,1e-05,weakref.py,289
+path_stats,1,0.0,0.0,1e-05,1e-05,<frozen importlib._bootstrap_external>,1146
+get_running_loop,4,0.0,0.0,1e-05,0.0,helpers.py,296
+_check_running,2,0.0,0.0,1e-05,0.0,base_events.py,586
+<built-in method time.get_clock_info>,1,1e-05,1e-05,1e-05,1e-05,~,0
+<method 'remove' of 'collections.deque' objects>,29,0.0,0.0,0.0,0.0,~,0
+<built-in method sys.set_asyncgen_hooks>,2,0.0,0.0,0.0,0.0,~,0
+set_debug,1,0.0,0.0,0.0,0.0,base_events.py,1943
+_register_atexit,1,0.0,0.0,0.0,0.0,threading.py,1516
+_iter_bits_lsb,3,0.0,0.0,0.0,0.0,enum.py,117
+<built-in method _asyncio._get_running_loop>,14,0.0,0.0,0.0,0.0,~,0
+_verbose_message,7,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,244
+_acquireLock,1,0.0,0.0,0.0,0.0,__init__.py,228
+daemon,4,0.0,0.0,0.0,0.0,threading.py,1206
+_validate_timestamp_pyc,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,675
+getEffectiveLevel,1,0.0,0.0,0.0,0.0,__init__.py,1720
+_set_coroutine_origin_tracking,2,0.0,0.0,0.0,0.0,base_events.py,1925
+_check_name_wrapper,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,599
+cb,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,198
+_releaseLock,1,0.0,0.0,0.0,0.0,__init__.py,237
+is_running,7,0.0,0.0,0.0,0.0,base_events.py,696
+<built-in method _asyncio._get_event_loop>,1,0.0,0.0,0.0,0.0,~,0
+_path_importer_cache,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,1421
+<built-in method _thread.get_ident>,8,0.0,0.0,0.0,0.0,~,0
+<method 'clear' of 'set' objects>,1,0.0,0.0,0.0,0.0,~,0
+<built-in method _imp.find_frozen>,1,0.0,0.0,0.0,0.0,~,0
+<built-in method sys.get_asyncgen_hooks>,1,0.0,0.0,0.0,0.0,~,0
+__subclasshook__,2,0.0,0.0,0.0,0.0,<frozen _collections_abc>,409
+<built-in method _imp.acquire_lock>,6,0.0,0.0,0.0,0.0,~,0
+<built-in method _imp.is_builtin>,1,0.0,0.0,0.0,0.0,~,0
+<method 'values' of 'dict' objects>,2,0.0,0.0,0.0,0.0,~,0
+<method 'release' of '_thread.lock' objects>,8,0.0,0.0,0.0,0.0,~,0
+<built-in method from_bytes>,3,0.0,0.0,0.0,0.0,~,0
+<built-in method posix.register_at_fork>,1,0.0,0.0,0.0,0.0,~,0
+<built-in method _imp.release_lock>,6,0.0,0.0,0.0,0.0,~,0
+_new_module,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,48
+_cleanup_closed,1,0.0,0.0,0.0,0.0,connector.py,388
+<method 'popitem' of 'dict' objects>,1,0.0,0.0,0.0,0.0,~,0
+<method 'disable' of '_lsprof.Profiler' objects>,1,0.0,0.0,0.0,0.0,~,0
+is_set,4,0.0,0.0,0.0,0.0,threading.py,575
+<built-in method _imp._fix_co_filename>,1,0.0,0.0,0.0,0.0,~,0
+_path_isabs,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,180
+<built-in method builtins.setattr>,1,0.0,0.0,0.0,0.0,~,0
+<method 'setdefault' of 'dict' objects>,1,0.0,0.0,0.0,0.0,~,0
+disable,1,0.0,0.0,0.0,0.0,__init__.py,1319
+<method 'detach' of '_socket.socket' objects>,2,0.0,0.0,0.0,0.0,~,0
+stop,1,0.0,0.0,0.0,0.0,base_events.py,655
+<method 'acquire' of '_thread.RLock' objects>,1,0.0,0.0,0.0,0.0,~,0
+create_module,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,931
+main_thread,1,0.0,0.0,0.0,0.0,threading.py,1597
+BrokenThreadPool,1,0.0,0.0,0.0,0.0,thread.py,112
+get_filename,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,1122
+<method 'remove_done_callback' of '_asyncio.Task' objects>,1,0.0,0.0,0.0,0.0,~,0
+<method 'release' of '_thread.RLock' objects>,1,0.0,0.0,0.0,0.0,~,0
+_relax_case,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap_external>,71
+has_location,1,0.0,0.0,0.0,0.0,<frozen importlib._bootstrap>,413
