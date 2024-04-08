@@ -1,0 +1,5 @@
+file_name,max_connections,total_time_s,fetch_time,write_time,data_volume_TB
+deepCoadd_calexp_transfer_16.prof,16,6525.986,1034.887,5.031,1.8579
+deepCoadd_calexp_transfer_32.prof,32,4565.049,1156.689,5.247,1.8577
+deepCoadd_calexp_transfer_64.prof,64,4447.565,1187.842,5.919,1.8578
+deepCoadd_calexp_transfer_128.prof,128,4263.167,1058.280,5.511,1.8574	
